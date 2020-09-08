@@ -2,6 +2,19 @@
 
 ## Data sources
 - [commonvoice](https://commonvoice.mozilla.org/en/datasets)
+- [Arabic Speech Corpus (1.1 GB)](http://en.arabicspeechcorpus.com/) Used a professional studio to record
+
+- [MultiModal Emotion a labeled dataset of the TV series “Friends” (10.1 GB)](https://github.com/declare-lab/MELD)
+
+- [TED talks (English) (54 GB)](http://www.openslr.org/51/)
+- [TED talks (Spanish) (2.3 GB)](http://www.openslr.org/67/)
+
+- [South African Languages](http://www.openslr.org/32/) in Afrikaans (950MB), Sesotho (724MB), Setswana (729MB), isiXhosa (907MB)
+- [Bengali Languages](http://www.openslr.org/37/) in Bangladesh Bengali (586 MB) and Indian Bengali (416 MB)
+- More languages like the ones above can be found [here](http://www.openslr.org/resources.php) 
+
+- [UK, Ireland, and English dialects (7.1 GB)](https://research.google/tools/datasets/uk-ireland-english-dialects/)
+
 
 ## Technology
 - Sample Project - [Audio Super Resolution with Neural Network](https://kuleshov.github.io/audio-super-res/)
