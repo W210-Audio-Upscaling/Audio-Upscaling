@@ -15,10 +15,7 @@ def normalize(original_file: str, target_location: str, bitrate: int):
         target_location: Location to save file
         bitrate: Bit rate
     """
-    assert(
-        target_location[-4:].lower() == ".mp3",
-        "Target needs to be in .mp3 format"
-    )
+    assert target_location[-4:].lower() == ".mp3", "Target needs to be in .mp3 format"
     ff = FFmpeg(
         inputs={original_file: None},
         outputs={target_location: '-ac 1 -ab %s'%(bitrate)}
@@ -45,10 +42,8 @@ def bulk_normalize(
         if ignore_errors:
             continue
         else:
-            assert(
-                _file[-4:].lower() == ".wav",
-                f"This file is not a WAV file: {_file}"
-            )
-        target = os.path.join(target_location, _file[-4:])
+            assert _file[-4:].lower() == ".wav", f"This file is not a WAV file: {_file}"
+        target = os.path.join(target_location,  _file[:-4], ".mp3")
+        print(target)
         normalize(_file, target, bitrate)
     return
